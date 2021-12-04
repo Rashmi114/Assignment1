@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
     background-color: #f4f4f4;
@@ -11,16 +12,11 @@ body {
     line-height: 1.5;
     align-items: center;
 }
-.navbar {
-    position: absolute;
-    left: 50%;
+#navButton{
+    position: relative;
+    left: 80%;
     transform: translatex(-50%);
-    top: 5%;
 }
-.containerBtn{
-    align-items: center;
-}
-
 .container{
     position: absolute;
     left: 50%;
