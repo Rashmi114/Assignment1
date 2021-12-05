@@ -1,21 +1,14 @@
 
 
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body {
     background-color: #f4f4f4;
-
-
-
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
     align-items: center;
-}
-#navButton{
-    position: relative;
-    left: 80%;
-    transform: translatex(-50%);
 }
 .container{
     position: absolute;
@@ -24,9 +17,27 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 50%;
+    height: 50%;
+    background-size: 100%;
 }
+ #navButton{ 
+    position: relative;
+    left: 80%;
+    transform: translatex(-50%);
+    justify-content: center;
+} 
+
+
 #button{
     position: relative;
     left: 95%;
     transform: translatex(-50%);
 }
+
+@media only screen and (max-width: 678px) {
+    .container{
+        background-size: 200%;
+    }
+
+}
+
