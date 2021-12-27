@@ -1,43 +1,206 @@
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 body {
-    background-color: #f4f4f4;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
-    align-items: center;
+  background-color: #f4f4f4;
+  height: 100vh;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  align-items: center;
 }
-.container{
+.container {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-size: 100%;
+  /* display: flex; */
+}
+
+.sidebar{
+  top: -10%;
+  background-color: aquamarine;
+  position: absolute;
+  font-family: 'Fira Sans', sans-serif;
+  width: 100%;
+  transition: transform 0.3s ease-in;
+  left: -1px;
+  
+}
+.sidebar nav{
+  padding: 10px;
+}
+.sidebar nav li{
+  float: left;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 18px;
+}
+.sidebar nav li a{
+  text-decoration: none;
+}
+ .sidebar li a:hover{
+color: white;
+ }
+ .sidebarGo{
+  transform: translateY(-443px);
+  position: absolute;
+}
+  .humburger{
+    top: -28px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
-    background-size: 100%;
+    margin-left: 7px;
+  }
+  .close{
+    margin-left: 530px;
+  }
+  
+/* .main{
+  width: 85vw;
+} */
+#myForm {
+  background-color: white;
+  margin-top: 30px;
+  height: 450px;
 }
- #navButton{ 
-    position: relative;
-    left: 80%;
-    transform: translatex(-50%);
-    justify-content: center;
-} 
-
-
-#button{
-    position: relative;
-    left: 95%;
-    transform: translatex(-50%);
+#button {
+  position: relative;
+  left: 95%;
+  transform: translatex(-50%);
+  cursor: pointer;
+}
+.line {
+  height: 50%;
+  width: auto;
+}
+hr {
+  display: block;
+  margin-top:  576px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media only screen and (max-width: 678px) {
+.containerL{
+  position: absolute;
+  width: 50%;
+  margin-left: 25%;
+}
+.sidebarL{
+  top: -4%;
+  background-color: aquamarine;
+  position: absolute;
+  font-family: 'Fira Sans', sans-serif;
+  width: 100%;
+  transition: transform 0.6s ease-in;
+  
+}
+.sidebarL nav{
+  padding: 10px;
+}
+.sidebarL nav li{
+  float: left;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 18px;
+}
+.sidebarL nav li a{
+  text-decoration: none;
+}
+ .sidebarL li a:hover{
+color: white;
+ }
+ .sidebarGoL{
+  transform: translateY(-1107px);
+  position: absolute;
+}
+.humburgerL{
+  top: -8px;
+  position: absolute;
+  margin-left: 7px;
+}
+.closeL{
+  margin-left: 530px;
+}
+#login {
+  text-align: center;
+  background-color: white;
+  margin-top: 30px;
+  height: 300px;
+}
+#buttonL{
+  cursor: pointer;
+  text-align: center;
+  margin-left: -157px;
+    padding: 12px;
+}
+
+
+#signup {
+  text-align: center;
+  background-color: white;
+  margin-top: 30px;
+  height: 350px;
+}
+
+
+#user {
+  text-align: center;
+  background-color: white;
+  margin-top: 30px;
+  height: 300px;
+}
+/* .sidebarGo{
+  /* transform: translate(-443px, 0px); */
+  /* position: absolute;
+} */ 
+
+
+
+/* @media only screen and (max-width: 678px) {
     .container{
         background-size: 200%;
     }
 
-}
+} */
 
+/* @media (max-width: 800px) {
+  #navButton .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  #navButton .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #navButton .openMenu {
+    display: block;
+  }
+  #navButton .mainMenu .btn-check a:hover {
+    background: none;
+    color: orangered;
+    font-size: 1.6rem;
+  }
+} */
